@@ -1,0 +1,73 @@
+<img src="../assets/head.jpg" style="height: 400px;width: 100%;">
+<div class="fat">
+<div class="container-fluid">
+  <div class="row" >
+    <div class="col-md-2 text-center shadow p-4 mb-4 bg-white compo" *ngFor="let t of products;let i = index" >
+      <!-- the delete button -->
+      <div class="dell">
+        <button class="del" (click)="onDelete(i)">
+          <i class="fa fa-times-circle"></i>
+        </button>
+      </div>
+      <div class="dro">
+<!-- modification   -->
+        <div class="dropdow">
+          <form>           
+            <div class="drop">
+              <div class="form-group">
+                <input class="form-control" type="text" value="{{t.titre}}" #monom/>
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="text" value="{{t.photo}}" #mosrc/>
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="text" value="{{t.prix}}" #moprix/>
+              </div>
+              <div class="form-group">
+                  <input class="form-control" type="text" value="{{t.id}}" #moid/>
+              </div>
+              <div class="form-group">
+                  <input class="form-control" type="text" value="{{t.categorie}}" #moca/>
+              </div>
+              <button class="modif" (click)="onUpgrade(monom.value,mosrc.value,moprix.value,moid.value,moca.value)">
+                Modifier
+              </button>
+            </div>
+          </form>
+        </div>
+                    <!-- produi -->
+        <div class="besh">        
+          <div>
+          <img src={{t.photo}} class="imgi">
+          </div>
+          <div class="titre">
+           <strong>{{t.titre}}</strong>
+          </div>
+          <div class="prix">
+            {{t.prix}} dt
+          </div>          
+          <div class="categorie" style="font-size: 20px;">
+            {{t.categorie}}
+          </div>
+          <div>{{t.id}}</div>          
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 text-center shadow p-4 mb-4 bg-white" style="height:261px;margin:50px;padding: 0px !important;">
+        <form class="dropdown ">
+          <button class="dropbtn"><i class="fa fa-plus"></i></button>
+          <div class="dropdown-content">
+            <div class="form-group"><input class="form-control" type="text" placeholder="product name" #nom/></div>
+            <div class="form-group"><input class="form-control" type="text" placeholder="image name" #src/></div>
+            <div class="form-group"><input class="form-control" type="text" placeholder="product price" #prix/></div>
+            <div class="form-group"><input class="form-control" type="text" placeholder="product id" #id/></div>
+            <div class="form-group"><input class="form-control" type="text" placeholder="categorie" #cat/></div>
+            <button class="add" (click)="onAddProc(nom.value,src.value,prix.value,id.value,cat.value)">Ajouter</button>
+          </div>
+        </form>
+      </div>
+  </div>
+</div>
+</div>
+
+

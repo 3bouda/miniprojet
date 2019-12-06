@@ -1,0 +1,73 @@
+.fat{
+  background-image:url('C:/Users/IHEB/Desktop/iheb/tounsi/src/assets/crissxcross.png');
+
+}
+
+.buy {
+    border: none;
+    padding: 12px;
+    color: white;
+    background-color:rgb(129, 11, 11);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+   
+  }
+  
+  .buy:hover {
+    opacity: 0.7;
+  }
+  
+  .ser{  
+    border-radius: 10%;
+    border-style: inset;
+    border-width: thin;
+    width:250px; 
+  }
+  .ser:focus {outline: 0;border: 1px solid #f48fb1;box-shadow: 0 1px 0 0 #ce93d8;}
+
+
+  .sidenav {
+    height: 100%;
+  
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav button {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    border: none;
+    width:100%;
+    background-color: #111;
+  }
+  
+  .sidenav button:hover {
+    color: #f1f1f1;
+    background-color: #818181;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 25px;
+    margin-left: 80px;
+    width:20px;
+    color:white;
+    background-color: #111;
+  }
+  .sidenav .closebtn:hover {background-color: #111;}
+.c1{width:250px;}
+.c2{width:0px;}
